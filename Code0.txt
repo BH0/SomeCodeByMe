@@ -124,14 +124,79 @@ void debug() {
 
 _______
 
+C Code:
+#include <stdio.h>
+
+int main() {
+    
+    // Program:
+    /*
+    * Program gets input (expects an integer)
+    * Stores input in an integer variable as the temperature 
+    * Does Fahrenheit to Celsius conversion with the temperature (inputted integer)
+    * Does Celsius to Fahrenheit conversion with the temperature (inputted itneger)
+    * Outputs the results for both of the conversions
+    */
+    
+    int temp, input;
+    
+    printf("Please enter an integer: ");
+    
+    // Gets input
+    scanf("%d", &input);
+    printf("\n Temperature = %d", input);
+    
+    // Stores input
+    temp = input;
+    
+    // Converts appropriately
+    int f_c_algo = temp - 32 * 5 / 9;
+    int c_f_algo = temp * 9 / 5 + 32; 
+    
+    // Outputs conversion result/s
+    printf("\n C to F: %d, \n F to C: %d", c_f_algo, f_c_algo);
+    
+    printf("\n Please excuse any inaccuracy - inaccuracy may occur because: ");
+    printf("\n This program handles only integers, as opposed to floats, decimals etc");
+    
+    return 0;
+}
+
+
+
 Brainfuck Code:
 Program prints 5 down to 1 with a new~line in between
 ++ [ > +++++ < -] Loops to Ten (ten means newLine)
 >> +++++ [ > +++++ [ > ++ < - ] < -] >> +++. Increment 53 & print (5) 
 [<<<. >>> -. <<<. >>> -. <<<. >>> -. <<<. >>> -. <<<. >>> -. >] (4,3,2,1,0)
 
+Fortran Code:
+program TempConvertor
+implicit none
 
-Javascript Code:
+! Initiallize variables
+integer :: temp, f_c_result, c_f_result
+
+! Recieve input
+print *, "Please enter a temperature (integer)"
+read (*,*) temp
+
+! Agorithms (Convert appropriately)
+f_c_result = temp - 32 * 5 / 9
+c_f_result = temp * 9 / 5 + 32
+
+! Output
+print *, "Temperature: ",temp 
+print *, "Fahreinheit to Celsius: ",f_c_result
+print *, "Celsius to Fahrenheit: ",c_f_result
+
+print *, "Program may be inaccurate due to its use of integers as opposed to decimals, floats etcetera."
+
+end program TempConvertor
+
+
+
+Javascript/HTML5 Canvas Code:
 
 var health_xpos = 40;
 var health_ypos = 40;

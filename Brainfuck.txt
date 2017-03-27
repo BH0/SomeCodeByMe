@@ -1,0 +1,4 @@
+Program prints 5 down to 1 with a new~line in between
+++ [ > +++++ < -] Loops to Ten (ten means newLine)
+>> +++++ [ > +++++ [ > ++ < - ] < -] >> +++. Increment 53 & print (5) 
+[<<<. >>> -. <<<. >>> -. <<<. >>> -. <<<. >>> -. <<<. >>> -. >] (4,3,2,1,0)
